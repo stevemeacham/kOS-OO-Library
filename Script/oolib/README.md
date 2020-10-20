@@ -38,7 +38,7 @@ The accompanying documentation provides the same freedoms that the software does
   * [boot.ks](/Script/boot/boot.ks), the main boot script, can be run from any volume that contains `/oolib/oolib.ks`, `/oolib/lib_tty.ks`, and `/oolib/bootmsg.ks`.
 * [INSTALL.md](/INSTALL.md) explains how to install oolib in KSP.
 * [LICENSE](/LICENSE) is the GPLv3 license text, located and formatted in a way that GitHub likes.
-* [ksconfig.json](/ksconfig.json) provides some useful configuration settings for using Visual Studio Code (VSCode) with this Library, when using the "kOS (Kerboscript)" and "Kerbal Operating system" extensions.
+* [ksconfig.json](/ksconfig.json) provides some useful configuration settings for using Visual Studio Code (VSCode) with this Library, when using the "kOS (KerboScript)" and "Kerbal Operating system" extensions.
 * [.gitignore](/.gitignore) keeps unwanted files out of the repository.  Specifically, those that sometimes appear when using VSCode, VIM, Emacs, MacOS, Windows, and Linux.
 
 -----
