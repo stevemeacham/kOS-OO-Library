@@ -13,7 +13,7 @@ Don't be fooled by its brevity.  This unique [kOS](https://ksp-kos.github.io/KOS
 - [Usage](#usage)
 
 ## Install
-Copy the `oolib` folder with contents into your KSP installation's `Ships/Script` folder.
+See [INSTALL](../INSTALL.md).
 ## Initialize
 A program creates a `Lexicon` and passes it as an argument to the `oolib` script.  This `Lexicon` will be used to encapsulate all namespaces, classes, objects, and methods while the program is running.
 ```
@@ -93,13 +93,17 @@ LOCAL Map IS Lexicon(                     // 1
 ### Register the "oo" library
 The oolib is added to the name space registry.  For this reason, the code sample is provided below, but not further explained.
 ```
-LOCAL library IS Map:new().
-library:put("Object", Object).
+LOCAL library IS Map:new().    // 1
+library:put("Object", Object). // 2
 library:put("Map", Map).
 
-LOCAL namespace IS Map:new(Lexicon(), Object:new(nsr)).
-namespace:put("oo", library).
+LOCAL namespace IS Map:new(Lexicon(), Object:new(nsr)). // 3
+namespace:put("oo", library).                           // 4
 ```
+1. The oolib library namespace is created, which will be put into the nsr (name space registry).
+2. Objects are added to the namespace.
+3. Magic occurs.  This is where the nsr is created, and it only happens once.  Here.
+4. The oolib library namespace is the first namespace to go into the nsr.
 ## Usage
 TODO
 

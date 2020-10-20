@@ -1,0 +1,7 @@
+KOS Object-Oriented Library
+
+Copyright © 2020 Steve Meacham et al.
+
+This program comes with ABSOLUTELY NO WARRANTY; for details TODO
+
+This is free software, and you are welcome to redistribute it under certain conditions; for details TODO

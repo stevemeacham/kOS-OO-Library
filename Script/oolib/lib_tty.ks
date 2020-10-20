@@ -4,10 +4,23 @@
 
 PARAMETER nsr.
 
+LOCAL FUNCTION wrap {
+	PARAMETER text, limit.
+
+	IF text:LENGTH <= limit {PRINT text. RETURN.}
+
+	LOCAL edge IS text:SUBSTRING(0, limit):LASTINDEXOF(" ").
+	IF edge <= 0 {PRINT text. RETURN.}
+
+	PRINT text:SUBSTRING(0, edge).
+	wrap(text:REMOVE(0, edge+1):TRIMSTART, limit).
+}
+
 LOCAL FUNCTION println {
 	PARAMETER s IS "", a IS ""+s.
 
-	PRINT CHOOSE a IF a:LENGTH>0 ELSE " ".
+	IF a:LENGTH <=0 {PRINT " ". RETURN.}
+	wrap(a, TERMINAL:WIDTH).
 }
 
 LOCAL FUNCTION print_hr {

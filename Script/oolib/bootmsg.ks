@@ -3,10 +3,10 @@
 // Lic. GPL-3.0-or-later
 
 PARAMETER nsr.
-RUNONCEPATH("../oolib/lib_tty", nsr). LOCAL tty IS nsr:get("tty").
+RUNONCEPATH("/oolib/lib_tty", nsr). LOCAL tty IS nsr:get("tty").
 
 LOCAL FUNCTION gpl {
-	tty:print_file("/ark/data/gpl.txt").
+	tty:print_file("/oolib/data/gpl.txt").
 }
 
 LOCAL FUNCTION cpu {
@@ -16,4 +16,4 @@ LOCAL FUNCTION cpu {
 	tty:println(CORE:VOLUME:FREESPACE + " bytes free").
 }
 
-nsr:put("arkbootmsg", Lexicon("gpl", gpl@, "cpu", cpu@)).
+nsr:put("bootmsg", Lexicon("gpl", gpl@, "cpu", cpu@)).
