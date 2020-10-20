@@ -22,7 +22,8 @@ Copyright © 2020 Steve Meacham and contributors
 These programs, the program code, and any examples of program code are free software.  Permission is granted to redistribute them and/or modify them under the terms of the [GNU General Public License v3.0 or \(at your option\) any later version](/Script/oolib/LICENSE.GPL-3.0-or-later.md).  Any programs, program code, or examples of program code that specify compatible Licenses granting additional permissions remain governed by this License without regard to the additional permissions.
 
 The accompanying documentation provides the same freedoms that the software does.  Permission is granted to copy, distribute and/or modify the accompanying documentation under the terms of the [GNU Free Documentation License v1.3 or \(at your option\) later](/Script/oolib/LICENSE.GFDL-1.3-or-later.md).  Any documents that specify compatible Licenses granting additional permissions remain governed by this License without regard to the additional permissions.
-## Library Structure
+## Repository Structure
+* The `Script` folder corresponds to the folder where the kOS mod looks for scripts.  Including it in this repository makes things a little cleaner, but also solves some potential problems when this library is installed without reading the instructions.
 * The `oolib` folder is required.  See [INSTALL](/INSTALL.md).
   * [oolib.ks](/Script/oolib/oolib.ks) is the kOS Object Oriented Library.  See [oolib.md](/Script/oolib/oolib.md) to learn all about it.
   * [lib_tty.ks](/Script/oolib/lib_tty.ks) demonstrates using oolib and exposes functions to print with word-wrap, print horizontal rules similar to HTML's `hr`, and print the contents of text files.
@@ -35,6 +36,10 @@ The accompanying documentation provides the same freedoms that the software does
 * The `boot` folder is optional.  
   * [tinyboot.ks](/Script/boot/tinyboot.ks) fits in under 100 kOS disk capacity and starts the boot process from the Archive volume.  
   * [boot.ks](/Script/boot/boot.ks), the main boot script, can be run from any volume that contains `/oolib/oolib.ks`, `/oolib/lib_tty.ks`, and `/oolib/bootmsg.ks`.
+* [INSTALL.md](/INSTALL.md) explains how to install oolib in KSP.
+* [LICENSE](/LICENSE) is the GPLv3 license text, located and formatted in a way that GitHub likes.
+* [ksconfig.json](/ksconfig.json) provides some useful configuration settings for using Visual Studio Code (VSCode) with this Library, when using the "kOS (Kerboscript)" and "Kerbal Operating system" extensions.
+* [.gitignore](/.gitignore) keeps unwanted files out of the repository.  Specifically, those that sometimes appear when using VSCode, VIM, Emacs, MacOS, Windows, and Linux.
 
 -----
 
