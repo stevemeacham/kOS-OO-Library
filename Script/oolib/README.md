@@ -3,6 +3,11 @@
 This unique kOS library supports class and prototype based object oriented programming and namespaces.  It also uses NO GLOBALS and enables any kOS program or library to do the same, large or small, no matter how complex.
 ## Origin
 [Original GitHub Repository](https://github.com/stevemeacham/kOS-OO-Library)
+## Inspiration
+* Gisi, Kevin [CheersKevinGames], (2016, February 21), *kOS v0.19.0 Deep Dive - Delegates*<br>
+  [Video].  YouTube.  https://youtu.be/pcbURdU_WyU
+* The KSLib Team, (2015), *KSLib*<br>
+  [GitHub repository], https://github.com/KSP-KOS/KSLib
 ## Requirements and Dependencies
 * [Kerbal Space Program (KSP)](https://kerbalspaceprogram.com/)
 * [kOS: Kerbal Operating System (kOS)](https://ksp-kos.github.io/KOS/)
@@ -29,9 +34,8 @@ The accompanying documentation provides the same freedoms that the software does
   * [lib_tty.ks](/Script/oolib/lib_tty.ks) demonstrates using oolib and exposes functions to print with word-wrap, print horizontal rules similar to HTML's `hr`, and print the contents of text files.
   * [bootmsg.ks](/Script/oolib/bootmsg.ks) demonstrates using oolib and lib_tty and exposes a function to print the GPLv3 interactive terminal copyright notice (to make RHS proud) and another to print some information about the kOS Processor it is run on.
   * Files that aren't necessary when running a program, but are in the folder so they remain with with oolib when it is [installed](/INSTALL.md).
-    * This `README.md` is the main `README.md`.  The `README.md` in the repository root is a soft link to this file.
-    * `LICENSE.*.md` - the name's on the tin.
     * Other `*.md` files correspond one-to-one with the `.ks` files and provide useful information about each.
+* The `oolib/Licenses` folder - the name's on the tin.
 * The `oolib/data` folder contains the [interactive terminal GPL copyright notice](/Script/oolib/data/gpl.txt) to be printed by `bootmsg.ks`.
 * The `boot` folder is optional.  
   * [tinyboot.ks](/Script/boot/tinyboot.ks) fits in under 100 kOS disk capacity and starts the boot process from the Archive volume.  
