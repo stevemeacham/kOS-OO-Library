@@ -13,7 +13,7 @@ Don't be fooled by its brevity.  This unique [kOS](https://ksp-kos.github.io/KOS
 - [Usage](#usage)
 
 ## Install
-See [INSTALL](../INSTALL.md).
+See [INSTALL](/INSTALL.md).
 ## Initialize
 A program creates a `Lexicon` and passes it as an argument to the `oolib` script.  This `Lexicon` will be used to encapsulate all namespaces, classes, objects, and methods while the program is running.
 ```
@@ -108,8 +108,8 @@ namespace:put("oo", library).                           // 4
 TODO
 
 ---
-This document is part of the kOS Object Oriented Library documentation.
+This document is part of the kOS Object-Oriented Library documentation.
 
 Copyright © 2020 Steve Meacham and contributors
 
-Permission is granted to copy, distribute and/or modify this document under the terms of the [GNU General Public License v3.0 or \(at your option\) any later version](Licenses/LICENSE.GPL-3.0-or-later.md) published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A copy of the license is included.
+Permission is granted to copy, distribute and/or modify this document under the terms of the [GNU Free Documentation License v1.3 or \(at your option\) later](/Script/oolib/LICENSE.GFDL-1.3-or-later.md) published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A copy of the license is included.
